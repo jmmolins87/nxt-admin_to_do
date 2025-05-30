@@ -9,4 +9,6 @@ Pasos para levantar la app en desarrolllo
 docker compose up -d
 ```
 
+# Prod
 
+# Stage
