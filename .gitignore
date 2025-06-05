@@ -2,6 +2,7 @@
 
 /postgres
 
+
 # dependencies
 /node_modules
 /.pnp
@@ -31,9 +32,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+.well-known/
 
 # env files (can opt-in for committing if needed)
-.env*
+/.env
 
 # vercel
 .vercel
@@ -41,3 +43,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/src/generated/prisma
