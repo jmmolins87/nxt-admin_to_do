@@ -15,11 +15,11 @@ export async function GET(request: Request) {
     
     await prisma.toDo.createMany({
         data: [
-            { description: 'Piedra de Alma', completed: true },
-            { description: 'Piedra del Poder' },
-            { description: 'Piedra del Tiempo' },
-            { description: 'Piedra del Espacio' },
-            { description: 'Piedra de Realidad' },
+            { id: '1', description: 'Piedra de Alma', completed: true, updatedAt: new Date() },
+            { id: '2', description: 'Piedra del Poder', completed: false, updatedAt: new Date() },
+            { id: '3', description: 'Piedra del Tiempo', completed: false, updatedAt: new Date() },
+            { id: '4', description: 'Piedra del Espacio', completed: false, updatedAt: new Date() },
+            { id: '5', description: 'Piedra de Realidad', completed: false, updatedAt: new Date() },
         ]
     })
 
